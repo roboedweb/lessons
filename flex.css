@@ -1,0 +1,27 @@
+.child {
+    width: 50px;
+    /*height: 50px;*/
+    border: 3px dashed red;
+    font-size: 25px;
+    text-align: center;
+}
+article {
+    height: 400px;
+    margin-bottom: 20px;
+}
+.cont1 {
+    background-color:aqua;
+    display: flex;
+    justify-content: space-between;
+    /* flex-start / flex-end / center / space-between / space-around*/
+    align-items: stretch;
+    /* flex-start / flex-end / center / stretch */
+}
+.cont2 {
+    background-color:aqua;
+    display: flex;
+    justify-content: space-around;
+    /* flex-start / flex-end / center / space-between / space-around*/
+    align-items: center;
+    /* flex-start / flex-end / center / stretch */
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lesson 9 (JS <---> HTML)</title>
+    <style>
+        article {
+            border: 3px dashed tomato;
+            min-width: 35vw;
+            text-align: center;
+            padding: 30px 0;
+        }
+        div {
+            margin-top: 30px;
+        }
+        .numbers {
+            font-size: 25px;
+            font-family: monospace;
+            color: blueviolet;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="display:flex; justify-content:space-around;">
+    <article>
+        <button onClick="addContent(prompt('Add to content:', ''))">Add content</button>
+        <button onClick="changeContent(prompt('Change content:', ''))">Change content</button>
+        <button onClick="clearContent()">Clear content</button>
+        <div class="main">
+            MAIN CONTENT DIV
+        </div>
+    </article>
+    <article>
+        <input type="number" min="0" max="100" step="5" id="num">
+        <button id="fill">Fill</button>
+        <div class="numbers"></div>
+    </article>
+    <script src="script_l9.js"></script> 
+</body>
+</html>
