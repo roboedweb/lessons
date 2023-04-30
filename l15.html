@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modals Practice</title>
+    <link rel="stylesheet" href="style_l15.css">
+</head>
+<body>
+    <article> CSS:
+        <div class="btn-cont">
+            <a href="#block1" class="button">Window #1</a>
+            <a href="#block2" class="button">Window #2</a>
+        </div>
+        <div class="modal-cont" id="block1">
+            <div class="modal">
+                <a href="#close" class="close">X</a>
+                <img src="../EdWeb/images/02.jpg" alt="">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores pariatur odio doloremque, ipsa magni eum alias quasi porro in laboriosam corrupti maxime quae, iure dicta! Doloribus adipisci dolore quisquam expedita.
+                </p>
+            </div>
+        </div>
+        <div class="modal-cont" id="block2">
+            <div class="modal">
+                <a href="#close" class="close">X</a>
+                <img src="../EdWeb/images/07.jpg" alt="">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores pariatur odio doloremque, ipsa magni eum alias quasi porro in laboriosam corrupti maxime quae, iure dicta! Doloribus adipisci dolore quisquam expedita.
+                </p>
+            </div>
+        </div>
+    </article>
+    <article>JS:
+        <div class="btn-cont">
+            <a href="#" class="button js-modal-open">Window #1</a>
+            <a href="#" class="button js-modal-open">Window #2</a>
+        </div>
+        <div class="modal-cont js-overlay"></div>
+        <div class="modal" data-modal="1">
+            <svg class="svg-icon js-close" viewBox="0 0 20 20">
+                <path fill="#000" d="M12.71,7.291c-0.15-0.15-0.393-0.15-0.542,0L10,9.458L7.833,7.291c-0.15-0.15-0.392-0.15-0.542,0c-0.149,0.149-0.149,0.392,0,0.541L9.458,10l-2.168,2.167c-0.149,0.15-0.149,0.393,0,0.542c0.15,0.149,0.392,0.149,0.542,0L10,10.542l2.168,2.167c0.149,0.149,0.392,0.149,0.542,0c0.148-0.149,0.148-0.392,0-0.542L10.542,10l2.168-2.168C12.858,7.683,12.858,7.44,12.71,7.291z M10,1.188c-4.867,0-8.812,3.946-8.812,8.812c0,4.867,3.945,8.812,8.812,8.812s8.812-3.945,8.812-8.812C18.812,5.133,14.867,1.188,10,1.188z M10,18.046c-4.444,0-8.046-3.603-8.046-8.046c0-4.444,3.603-8.046,8.046-8.046c4.443,0,8.046,3.602,8.046,8.046C18.046,14.443,14.443,18.046,10,18.046z"></path>
+            </svg>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minus, nemo explicabo, earum cupiditate a adipisci dignissimos quo esse qui ut perferendis eveniet quaerat illo quibusdam eaque veniam ab debitis!
+            </p>
+        </div>
+        <div class="modal" data-modal="2">
+            <svg class="svg-icon js-close" viewBox="0 0 20 20">
+                <path fill="#000" d="M12.71,7.291c-0.15-0.15-0.393-0.15-0.542,0L10,9.458L7.833,7.291c-0.15-0.15-0.392-0.15-0.542,0c-0.149,0.149-0.149,0.392,0,0.541L9.458,10l-2.168,2.167c-0.149,0.15-0.149,0.393,0,0.542c0.15,0.149,0.392,0.149,0.542,0L10,10.542l2.168,2.167c0.149,0.149,0.392,0.149,0.542,0c0.148-0.149,0.148-0.392,0-0.542L10.542,10l2.168-2.168C12.858,7.683,12.858,7.44,12.71,7.291z M10,1.188c-4.867,0-8.812,3.946-8.812,8.812c0,4.867,3.945,8.812,8.812,8.812s8.812-3.945,8.812-8.812C18.812,5.133,14.867,1.188,10,1.188z M10,18.046c-4.444,0-8.046-3.603-8.046-8.046c0-4.444,3.603-8.046,8.046-8.046c4.443,0,8.046,3.602,8.046,8.046C18.046,14.443,14.443,18.046,10,18.046z"></path>
+            </svg>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minus, nemo explicabo, earum cupiditate a adipisci dignissimos quo esse qui ut perferendis eveniet quaerat illo quibusdam eaque veniam ab debitis!
+            </p>
+        </div>
+    </article>
+    <script src="script_l15.js"></script>
+</body>
+</html>
